@@ -142,10 +142,10 @@ public class Game {
             throw new ColumnIsFullException();
         }
         // Insert the disc
-        for (int i = numRows - 1; i >= 0; i--) {
-            if (board[i][col] == null) {
-                board[i][col] = disc;
-                return checkWin(i, col, getTurnPlayer());
+        for (int i = 0; i < numRows; i++) {
+            if (board[i][col] != null) {
+                board[i - 1][col] = disc;
+                return checkWin(i - 1, col, getTurnPlayer());
             }
         }
         board[numRows - 1][col] = disc;
