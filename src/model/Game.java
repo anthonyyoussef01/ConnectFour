@@ -1,5 +1,8 @@
 package model;
 
+import exceptions.ColumnIsFullException;
+import exceptions.InvalidColumnException;
+
 public class Game {
     private Disc[][] board;
     private Player playerOne;
@@ -75,7 +78,6 @@ public class Game {
         return false;
     }
 
-    // don't help me with this one
     private boolean checkDiagonal(int row, int col, Player turnPlayer) {
         // check the diagonal from bottom left to top right
         int count = 0;
@@ -126,5 +128,27 @@ public class Game {
     public boolean checkWin(int row, int col, Player turnPlayer) {
         // Check if the player has won
         return checkHorizontal(row, turnPlayer) || checkVertical(col, turnPlayer) || checkDiagonal(row, col, turnPlayer);
+    }
+
+    public boolean insertDisc(int col) throws ColumnIsFullException, InvalidColumnException {
+        // Whose disc to insert?
+        Disc disc = getTurnPlayer().getType() == PlayerType.PLAYER_ONE ? new PlayerOneDisc(getTurnPlayer()) : new PlayerTwoDisc(getTurnPlayer());
+        // Check if the column is valid
+        if (col < 0 || col >= numCols) {
+            throw new InvalidColumnException();
+        }
+        // Check if the column is full
+        if (board[0][col] != null) {
+            throw new ColumnIsFullException();
+        }
+        // Insert the disc
+        for (int i = numRows - 1; i >= 0; i--) {
+            if (board[i][col] == null) {
+                board[i][col] = disc;
+                return checkWin(i, col, getTurnPlayer());
+            }
+        }
+        board[numRows - 1][col] = disc;
+        return checkWin(numRows - 1, col, getTurnPlayer());
     }
 }
