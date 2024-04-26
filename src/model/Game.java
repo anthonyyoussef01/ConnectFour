@@ -20,6 +20,10 @@ public class Game {
         this.turn = true;
     }
 
+    public Disc[][] getBoard() {
+        return board;
+    }
+
     public boolean checkIfGameIsOver() {
         // Check if the game is over
         for (int i = 0; i < NUM_ROWS; i++) {
