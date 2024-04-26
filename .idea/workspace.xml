@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3c8fd12-5549-4bd8-8541-4fc13314036d" name="Changes" comment="Implemented GameView with the printBoard and playTurn">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c3c8fd12-5549-4bd8-8541-4fc13314036d" name="Changes" comment="Completed the GameLauncher, now game can start">
       <change beforePath="$PROJECT_DIR$/src/controller/GameLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GameLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +108,7 @@
       <workItem from="1714067342770" duration="27000" />
       <workItem from="1714070518529" duration="6514000" />
       <workItem from="1714091543489" duration="1250000" />
-      <workItem from="1714093713739" duration="3163000" />
+      <workItem from="1714093713739" duration="3219000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -152,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714095654199</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Completed the GameLauncher, now game can start">
+      <option name="closed" value="true" />
+      <created>1714097196590</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714097196590</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +173,8 @@
     <MESSAGE value="Fixed insertDisc. We start at the top of the columns instead of the bottom... Will just change this when I'm done. I don't like how this is set up" />
     <MESSAGE value="Started the GameLauncher and GameView" />
     <MESSAGE value="Implemented GameView with the printBoard and playTurn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented GameView with the printBoard and playTurn" />
+    <MESSAGE value="Completed the GameLauncher, now game can start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed the GameLauncher, now game can start" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -23,13 +23,8 @@ public class GameLauncher {
 
             try {
                 columnToInsertIn = gameView.playTurn(game.getTurnPlayer().getName());
-                game.insertDisc(columnToInsertIn);
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Please enter a number.");
-            } catch (ColumnIsFullException e) {
-                System.out.println("Column is full. Please enter a different column.");
-            } catch (InvalidColumnException e) {
-                System.out.println("Invalid column. Please enter a valid column.");
             }
 
             try {
