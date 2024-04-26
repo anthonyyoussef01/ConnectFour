@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3c8fd12-5549-4bd8-8541-4fc13314036d" name="Changes" comment="Fixed insertDisc. We start at the top of the columns instead of the bottom... Will just change this when I'm done. I don't like how this is set up">
-      <change afterPath="$PROJECT_DIR$/src/controller/GameLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/GameView.java" afterDir="false" />
+    <list default="true" id="c3c8fd12-5549-4bd8-8541-4fc13314036d" name="Changes" comment="Started the GameLauncher and GameView">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/GameView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "anthonyyoussef01"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/anthonyyoussef01/ConnectFour",
+    "accountId": "fe13ad8c-5970-4198-becf-7a28c3a32ab8"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -41,6 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/antho/IdeaProjects/Snake",
     "node.js.detected.package.eslint": "true",
@@ -49,14 +62,15 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/antho/IdeaProjects/ConnectFour/src/Main.java",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -73,7 +87,9 @@
       <workItem from="1714067027889" duration="5000" />
       <workItem from="1714067042703" duration="17000" />
       <workItem from="1714067342770" duration="27000" />
-      <workItem from="1714070518529" duration="4905000" />
+      <workItem from="1714070518529" duration="6514000" />
+      <workItem from="1714091543489" duration="1250000" />
+      <workItem from="1714093713739" duration="1630000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -99,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714083785418</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Started the GameLauncher and GameView">
+      <option name="closed" value="true" />
+      <created>1714085083138</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714085083138</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +136,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Created insertDisc disc so that the player can insert a disc in the game. Throws ColumnIsFullException if there is no space in the column selected. Throws InvalidColumnException if the column selected doesn't exist." />
     <MESSAGE value="Fixed insertDisc. We start at the top of the columns instead of the bottom... Will just change this when I'm done. I don't like how this is set up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed insertDisc. We start at the top of the columns instead of the bottom... Will just change this when I'm done. I don't like how this is set up" />
+    <MESSAGE value="Started the GameLauncher and GameView" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started the GameLauncher and GameView" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
